@@ -39,7 +39,12 @@ async def send_welcome(message: types.Message):
     await message.answer(
         f"<b>👋Assalomu Aleykum</b>\n\n<b>👤Hurmatli:</b> {message.from_user.first_name}\n\n<b>🤝Shartnoma tuzishni xohlaysizmi</b>",
         reply_markup = startbut)
-
+    
+@dp.message_handler(text = 'Orqaga🔙')
+async def back_1(message: types.Message):
+    await message.answer("Mal`lumotlarni qayta kiritishingiz mumkin")
+    await message.answer("<b>👥Ismingizni kiriting !</b>", reply_markup = xodimlar)
+    await NameStates.name_step.set()
 
 
 @dp.message_handler(text = "YOQ ❌")
