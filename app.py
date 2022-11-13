@@ -8,7 +8,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from keyboards.default.startkey import startbut, startbutl, xodimlar
 
 shablon = []
-API_TOKEN = '5753926515:AAEusqR4Ufw_xdRSh8bjKmqakugjB3oj3nY'
+API_TOKEN = '5753926515:AAEusqR4Ufw_xdRSh8bjKmqakugjB3o3nY'
 
 logging.basicConfig(level = logging.INFO)
 d = []
